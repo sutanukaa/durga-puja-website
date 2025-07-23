@@ -1,13 +1,6 @@
-@font-face {
-  font-family: 'Antolia Buchery';
-  src: url('/fonts/AntoliaBuchery.woff2') format('woff2'),
-       url('/fonts/AntoliaBuchery.woff') format('woff'),
-       url('/fonts/AntoliaBuchery.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
+/* Fallback font styles for antolia-font class */
 .antolia-font {
-  font-family: 'Antolia Buchery', cursive;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: bold;
+  letter-spacing: 0.02em;
 }

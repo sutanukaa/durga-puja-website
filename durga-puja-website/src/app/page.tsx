@@ -126,10 +126,8 @@ function Hero() {
   );
 }
 
-// Your Home component with the About section that has the dhak images
+// Your Home component with the About section
 export default function Home() {
-  const [isAboutVisible, setIsAboutVisible] = useState(false);
-
   // Effect for scroll-triggered animations
   useEffect(() => {
     const checkVisibility = () => {
@@ -137,7 +135,6 @@ export default function Home() {
       if (aboutSection) {
         const rect = aboutSection.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight - 200 && rect.bottom >= 0;
-        setIsAboutVisible(isVisible);
         
         if (isVisible) {
           // Animate flowers sliding in from left
@@ -330,7 +327,6 @@ export default function Home() {
               height={680}
               className="object-contain opacity-90"
               priority
-              unoptimized
             />
           </div>
         </div>
@@ -353,7 +349,6 @@ export default function Home() {
               height={150}
               className="object-contain opacity-90"
               priority
-              unoptimized
             />
           </div>
         </div>
@@ -389,7 +384,6 @@ export default function Home() {
               height={175}
               className="object-contain opacity-90"
               priority
-              unoptimized
             />
           </div>
         </div>
